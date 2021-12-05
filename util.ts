@@ -30,3 +30,9 @@ export const arrToNumberArr = (arr: Array<string>): Array<number> => {
 export const sortNumbers = (arr: Array<number>): Array<number> => {
   return arr.sort((a, b) => a - b)
 }
+
+export const log = (statement: any, debug: boolean): void => {
+  if (debug) {
+    console.log(statement)
+  }
+}
